@@ -1,18 +1,20 @@
 <!-- Fixed navbar -->
-      <div id="navigation" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <%= link_to "Codex", welcome_index_path, class: "navbar-brand" %>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><%= link_to "About", welcome_about_path, class: "smoothscroll" %></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
+<div id="navigation" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Codex", welcome_index_path(:anchor => "home"), class: "navbar-brand" %>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><%= link_to "About", welcome_index_path(:anchor =>"about"), class: "smoothscroll" %></li>
+        <li><%= link_to "Showcase", welcome_index_path(:anchor =>"showcase"), class: "smoothscroll" %></li>
+        <li><%= link_to "Contact Me", welcome_index_path(:anchor =>"contact"), class: "smoothscroll" %></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

@@ -1,6 +1,6 @@
 
 body {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -80,7 +80,7 @@ a:after {
 	margin-top: 30px;
 	color: white;
 	font-size: 70px;
-	
+
 }
 
 #headerwrap h3 {
