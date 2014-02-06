@@ -18,13 +18,13 @@
       <br>
       <br>
       <div class="col-lg-4">
-        Item 1
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse leo lacus, adipiscing a nulla at, ullamcorper feugiat lacus. Integer eleifend metus eu diam ultricies pellentesque. Phasellus sed sem vitae tortor cursus viverra. Etiam velit orci, euismod sit amet imperdiet non, lacinia nec elit. Aliquam pretium lorem lorem, at pharetra nisl volutpat id. Proin tempor nisl eu felis congue ultrices. Etiam interdum, nisl sed tincidunt ornare, dolor sem laoreet leo, et cursus purus orci ut justo. Nulla interdum elit vel est pharetra faucibus.</p>
       </div>
       <div class="col-lg-4">
-        Item 2
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse leo lacus, adipiscing a nulla at, ullamcorper feugiat lacus. Integer eleifend metus eu diam ultricies pellentesque. Phasellus sed sem vitae tortor cursus viverra. Etiam velit orci, euismod sit amet imperdiet non, lacinia nec elit. Aliquam pretium lorem lorem, at pharetra nisl volutpat id. Proin tempor nisl eu felis congue ultrices. Etiam interdum, nisl sed tincidunt ornare, dolor sem laoreet leo, et cursus purus orci ut justo. Nulla interdum elit vel est pharetra faucibus.</p>
       </div>
       <div class="col-lg-4">
-        Item 3
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse leo lacus, adipiscing a nulla at, ullamcorper feugiat lacus. Integer eleifend metus eu diam ultricies pellentesque. Phasellus sed sem vitae tortor cursus viverra. Etiam velit orci, euismod sit amet imperdiet non, lacinia nec elit. Aliquam pretium lorem lorem, at pharetra nisl volutpat id. Proin tempor nisl eu felis congue ultrices. Etiam interdum, nisl sed tincidunt ornare, dolor sem laoreet leo, et cursus purus orci ut justo. Nulla interdum elit vel est pharetra faucibus.</p>
       </div>
     </div>
     <hr>
@@ -38,7 +38,7 @@
       <br>
       <br>
       <div class="col-lg-6">
-        <h3>Image of product</h3>
+        <%= image_tag("cats-q-c-640-480-10.jpg") %>
       </div>
       <div class="col-lg-6">
         <h3>List features</h3>
@@ -52,10 +52,40 @@
 <section id="showcase" name="showcase"></section>
 <div id="showcase">
   <div class="container">
-    <div class="row centered">
-      <h3>Image slider goes here</h3>
+    <div class="row">
+      <h1 class="centered">Some Screenshots</h1>
+      <br>
+      <div class="col-lg-8 col-lg-offset-2">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          </ol>
+
+        <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <%= image_tag("cats-q-c-750-480-1.jpg") %>
+            </div>
+            <div class="item">
+              <%= image_tag("cats-q-c-750-480-8.jpg") %>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+    <br>
+    <br>
+    <br>
+  </div><!-- /container -->
 </div>
 
 <section id="contact" name="contact"></section>
@@ -95,7 +125,6 @@
   <div id="c">
     <div class="container">
       <p>Created by <%= link_to "Ronald Chacon", welcome_index_path %></p>
-
     </div>
   </div>
 
