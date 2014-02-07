@@ -1,16 +1,16 @@
-<section id="home" name="home"></section>
 <div class="" id="headerwrap">
   <div class="container">
     <div class="jumbotron">
       <h1>Codex</h1>
       <p>Codex is a resource for creating and sharing information!</p>
-      <p><a class="btn btn-primary btn-lg" role="button">Sign Up</a> or
-      <a class="btn btn-primary btn-lg" role="button">Sign In</a></p>
+      <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary btn-lg' %> or
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+      </p>
     </div>
   </div>
 </div>
 
-<section id="about" name="about"></section>
 <div id="intro">
   <div class="container">
     <div class="row centered">
@@ -49,7 +49,6 @@
   </div>
 </div>
 
-<section id="showcase" name="showcase"></section>
 <div id="showcase">
   <div class="container">
     <div class="row">
@@ -73,10 +72,10 @@
             </div>
           </div>
           <!-- Controls -->
-          <a class="left carousel-control href="#carousel-example-generic" data-slide="prev">
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
           </a>
-          <a class="right carousel-control href="#carousel-example-generic" data-slide="next">
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
@@ -88,7 +87,6 @@
   </div><!-- /container -->
 </div>
 
-<section id="contact" name="contact"></section>
 <div id="footerwrap">
     <div class="container">
       <div class="col-lg-5">

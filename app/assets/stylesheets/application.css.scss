@@ -1,6 +1,15 @@
 @import "bootstrap";
+@import "main";
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import "main.css";
+
+.user-info {
+  padding: 15px 0;
+}
+
+.alert {
+  margin-top: 15px;
+}
 
 
