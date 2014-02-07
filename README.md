@@ -2,4 +2,4 @@
 
 ##Codex is a wiki-style application to demonstrate Rails Web Development
 
-[Visit Codex](#)
+[Visit Codex](http://safe-inlet-3257.herokuapp.com/)
