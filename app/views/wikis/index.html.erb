@@ -1,12 +1,22 @@
 <div class="container">
-  <h1>Wikis</h1>
-  <% @wikis.each do |wiki| %>
-  <div class="media">
-    <div class="media-body">
-      <h4 class="media-header">
-        <%= link_to wiki.title, wiki %>
-      </h4>
+  <h1>Wiki's</h1>
+  <div class="row">
+    <div class="col-lg-8">
+      <% @wikis.each do |wiki| %>
+      <div class="media">
+        <div class="media-body">
+          <h4 class="media-header">
+            <%= link_to wiki.title, wiki %>
+          </h4>
+          <small>
+            submitted <%= time_ago_in_words(wiki.created_at) %> ago by <%= wiki.user.username %>
+          </small>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="col-lg-4">
+      <%= link_to "Create Wiki", new_wiki_path, class: "btn btn-primary btn-block btn-lg" %>
     </div>
   </div>
-  <% end %>
 </div>
