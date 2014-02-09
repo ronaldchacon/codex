@@ -1,6 +1,6 @@
 
 body {
-  background-color: #F0F0F0;
+  background-color: #F8F8F8;
     font-family: "Lato";
     font-weight: 300;
     font-size: 16px;
@@ -95,7 +95,7 @@ a:after {
 }
 
 #headerwrap p {
-	text-align: left;
+	text-align: center;
 	color: gray;
 }
 
