@@ -1,27 +1,35 @@
 <div class="container">
   <h1>Create Wiki</h1>
   <br>
-
-  <%= form_for @wiki, :html => {:class => 'form-horizontal'} do |f| %>
-    <div class="form-group">
-      <%= f.label :title, class: "col-sm-2 control-label" %>
-      <div class="col-sm-4">
-        <%= f.text_field :title, autofocus: true, class: "form-control" %>
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Wiki Guidelines</h2>
+        <p>This Wiki creator uses Markdown as a formatting language.</p>
+        <p>Don't know how to use Markdown? Head over to the <%= link_to "Markdown Cheatsheet", "https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" %> on GitHub to learn it! </p>
       </div>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :body, class: "col-sm-2 control-label" %>
-      <div class="col-sm-6">
-        <%= f.text_area :body, class: "form-control", rows: 15 %>
+      <div class="col-lg-8">
+    <%= form_for @wiki, :html => {:class => 'form-horizontal'} do |f| %>
+      <div class="form-group">
+        <%= f.label :title, class: "col-lg-2 control-label" %>
+        <div class="col-sm-4">
+          <%= f.text_field :title, autofocus: true, class: "form-control" %>
+        </div>
       </div>
-    </div>
 
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <%= f.submit "Save", class: "btn btn-primary" %>
+      <div class="form-group">
+        <%= f.label :body, class: "col-sm-2 control-label" %>
+        <div class="col-lg-10">
+          <%= f.text_area :body, class: "form-control", rows: 15 %>
+        </div>
       </div>
-    </div>
 
-  <% end %>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <%= f.submit "Save", class: "btn btn-primary" %>
+        </div>
+      </div>
+
+    <% end %>
+    </div>
+  </div>
 </div>
