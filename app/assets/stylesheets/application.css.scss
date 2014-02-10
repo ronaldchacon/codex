@@ -1,10 +1,10 @@
 @import "bootstrap";
-@import "base/epiceditor";
-@import "editor/epic-dark";
-@import "editor/epic-light";
-@import "preview/bartik";
-@import "preview/github";
-@import "preview/preview-dark";
+@import 'base/epiceditor';
+@import 'preview/bartik';
+@import 'preview/github';
+@import 'preview/preview-dark';
+@import 'editor/epic-dark';
+@import 'editor/epic-light';
 @import "main";
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -17,4 +17,7 @@
   margin-top: 15px;
 }
 
-
+#epiceditor {
+  height: 300px;
+  border: solid 1px #cccccc;
+}

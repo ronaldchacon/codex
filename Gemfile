@@ -28,6 +28,7 @@ end
 gem 'jquery-rails'
 gem 'devise'
 gem 'redcarpet'
+gem 'epic-editor-rails'
 
 
 # To use ActiveModel has_secure_password
