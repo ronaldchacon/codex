@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Codex</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -53,8 +53,7 @@
 
   <%= yield %>
 
-
-
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript">var editor = new EpicEditor().load();</script>
 </body>
 </html>

@@ -1,8 +1,13 @@
 @import "bootstrap";
+@import "base/epiceditor";
+@import "editor/epic-dark";
+@import "editor/epic-light";
+@import "preview/bartik";
+@import "preview/github";
+@import "preview/preview-dark";
 @import "main";
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-@import "main.css";
 
 .user-info {
   padding: 15px 0;
