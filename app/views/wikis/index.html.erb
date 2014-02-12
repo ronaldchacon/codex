@@ -16,7 +16,9 @@
       <% end %>
     </div>
     <div class="col-lg-4">
-      <%= link_to "Create Wiki", new_wiki_path, class: "btn btn-primary btn-block btn-lg" %>
+      <% if can? :create, Wiki %>
+        <%= link_to "Create Wiki", new_wiki_path, class: "btn btn-primary btn-block btn-lg" %>
+      <% end %>
     </div>
   </div>
 </div>

@@ -1,6 +1,8 @@
 <div class="container">
   <h1><%= markdown @wiki.title %></h1>
-  <%= link_to "Edit", edit_wiki_path(@wiki), class: 'btn btn-primary btn-xs' %>
+  <% if can? :edit, @wiki %>
+    <%= link_to "Edit", edit_wiki_path(@wiki), class: 'btn btn-primary btn-xs' %>
+  <% end %>
   <small>
     submitted <%= time_ago_in_words(@wiki.created_at) %> ago by <%= @wiki.user.username %>
   </small>
