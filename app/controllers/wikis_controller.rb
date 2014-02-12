@@ -12,7 +12,7 @@ class WikisController < ApplicationController
   end
 
   def create
-     raise
+     # raise
     @wiki = current_user.wikis.build(params[:wiki])
 
     if @wiki.save
