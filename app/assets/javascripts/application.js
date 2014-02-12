@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require 'epiceditor'
+// require 'epiceditor'
 //= require_tree .
 
 window.setTimeout(function() {
