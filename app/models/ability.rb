@@ -10,12 +10,14 @@ class Ability
 
     if user.role? :premium
       # can :create, Collaborator
+      can :read, Wiki
+      can :manage, Wiki, user_id: user.id
     end
 
     if user.role? :admin
       can :manage, :all
     end
 
-    can :read, :all
+    can :read, Wiki, public: true
   end
 end

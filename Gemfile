@@ -25,4 +25,6 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'redcarpet'
 gem 'cancan'
+gem 'figaro'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
