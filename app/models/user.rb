@@ -14,7 +14,6 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   ROLES = %w[free premium admin]
-
   def role?(base_role)
     role.nil? ? false : ROLES.index(base_role.to_s) <= ROLES.index(role)
   end

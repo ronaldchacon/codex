@@ -1,9 +1,12 @@
 class WikisController < ApplicationController
 
-  before_filter :authenticate_user!
-
   def index
-    @wikis = Wiki.all
+    if current_user
+      @wikis = Wiki.public
+      @wikis += current_user.wikis
+    else
+      @wikis = Wiki.public
+    end
   end
 
   def show

@@ -9,9 +9,8 @@ class Ability
     end
 
     if user.role? :premium
-      # can :create, Collaborator
+      # can :create, Collaboration
       can :read, Wiki
-      can :manage, Wiki, user_id: user.id
     end
 
     if user.role? :admin
