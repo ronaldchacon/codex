@@ -1,6 +1,8 @@
 class Wiki < ActiveRecord::Base
 
   belongs_to :user
+  has_many :collaborations
+  has_many :users, through: :collaborations
 
   attr_accessible :body, :title, :public
 

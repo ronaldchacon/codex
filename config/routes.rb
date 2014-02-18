@@ -1,6 +1,10 @@
 Codex::Application.routes.draw do
 
-  resources :wikis
+
+
+  resources :wikis do
+    resources :collaborations, only: [:index, :create, :edit]
+  end
 
   resources :charges
 
