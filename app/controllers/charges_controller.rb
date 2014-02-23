@@ -7,7 +7,6 @@ class ChargesController < ApplicationController
 
   def create
     # Amount in cents
-    #current_user = User.first
     @amount = 500
 
     customer = Stripe::Customer.create(

@@ -23,13 +23,22 @@
           <%= f.text_area :body, class: "form-control", rows: 10 %>
         </div>
       </div>
-
-      <div class="form-group">
-        <%= f.label :public, class: "col-sm-2 control-label" %>
-        <div class="col-lg-10">
-          <%= f.check_box :public, class: "form-control" %>
+      <% if current_user.role == "free" %>
+        <div class="form-group">
+          <%= f.label :public, class: "col-sm-2 control-label", style: "display:none" %>
+          <div class="col-lg-10">
+            <%= f.check_box :public, class: "form-control", style: "display:none" %>
+          </div>
         </div>
-      </div>
+        <% else %>
+          <div class="form-group">
+            <%= f.label :public, class: "col-sm-2 control-label" %>
+            <div class="col-lg-10">
+              <%= f.check_box :public, class: "form-control" %>
+            </div>
+          </div>
+          <% end %>
+
 
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
