@@ -1,5 +1,5 @@
-#Welcome to Codex
+# Codex
 
-##Codex is a wiki-style application to demonstrate Rails Web Development
+Codex is a wiki-style application to demonstrate Rails Web Development. Created using Rails 3.2
 
-[Visit Codex](http://safe-inlet-3257.herokuapp.com/)
+[Visit Codex](https://ronald-codex.herokuapp.com/)
